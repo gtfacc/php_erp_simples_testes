@@ -1,14 +1,14 @@
 <?php
-include_once '../../layouts/header.php';
+include_once ('../../layouts/header.php');
 
-include (dirname(__DIR__)."/../controllers/calcul_price.php");
+require (dirname(__DIR__)."/../controllers/calcul_price.php");
 
 ?>
 
 
 <div class="coontainer-fluid"><!--Divisão que reservar espaço com container que ocupa a tela toda https://getbootstrap.com/docs/5.0/layout/containers/ -->
     <div class="row"><!--reservalinha do botão-->
-        <button class="btn btn-primary" type="submit" onclick="return calculate-price"> Calcular Preço</button>
+        <button class="btn btn-primary" type="submit" onclick="calculate-price()"> Calcular Preço</button>
     </div>
     
     <div class="composition-price">
